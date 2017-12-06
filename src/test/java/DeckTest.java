@@ -9,6 +9,7 @@ public class DeckTest {
     Deck deck;
 
 
+
     @Before
     public void before(){
         deck = new Deck();
@@ -34,10 +35,14 @@ public class DeckTest {
         assertEquals(firstCard.getValue(), deck.dealCard().getValue());
     }
 
+
     @Test
     public void randomCardDealt(){
         deck.populateDeck();
         deck.shuffleDeck();
         System.out.println(deck.dealCard().prettyName());
     }
+
+
+
 }
