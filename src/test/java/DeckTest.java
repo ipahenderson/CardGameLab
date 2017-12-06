@@ -26,4 +26,11 @@ public class DeckTest {
         assertEquals(52, deck.deckSize());
     }
 
+
+    @Test
+    public void canDealCard(){
+        deck.populateDeck();
+        Card firstCard = new Card(SuitType.values()[0], ValueType.values()[0]);
+        assertEquals(firstCard.getValue(), deck.dealCard().getValue());
+    }
 }

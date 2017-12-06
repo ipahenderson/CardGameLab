@@ -16,21 +16,16 @@ public class Deck {
     }
 
     public void populateDeck(){
-        int i = 0;
         for(SuitType suit : SuitType.values()){
             for(ValueType value : ValueType.values()){
                 cards.add(new Card(suit, value));
-                i++;
             }
-
         }
+
     }
 
 
-
-
-
-
-
-
+    public Card dealCard() {
+        return this.cards.remove(0);
+    }
 }
