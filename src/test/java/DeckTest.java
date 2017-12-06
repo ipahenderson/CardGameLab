@@ -33,4 +33,11 @@ public class DeckTest {
         Card firstCard = new Card(SuitType.values()[0], ValueType.values()[0]);
         assertEquals(firstCard.getValue(), deck.dealCard().getValue());
     }
+
+    @Test
+    public void randomCardDealt(){
+        deck.populateDeck();
+        deck.shuffleDeck();
+        System.out.println(deck.dealCard().prettyName());
+    }
 }

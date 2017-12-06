@@ -20,4 +20,8 @@ public class Card {
     public int getRealValue() {
         return this.value.getValue();
     }
+
+    public String prettyName(){
+        return value.toString() + " of " + suit.toString();
+    }
 }
