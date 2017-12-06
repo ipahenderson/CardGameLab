@@ -34,6 +34,7 @@ public class GameTest {
     @Test
     public void canTotalHands(){
         deck.populateDeck();
+        deck.shuffleDeck();
         player1.takeCard(deck.dealCard());
         player1.takeCard(deck.dealCard());
         assertEquals(true, player1.getHandTotal() != 0);
