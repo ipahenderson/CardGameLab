@@ -29,4 +29,10 @@ public class CardTest {
     }
 
 
+    @Test
+    public void cardSevenIs7(){
+        assertEquals(7, card1.getRealValue());
+    }
+
+
 }

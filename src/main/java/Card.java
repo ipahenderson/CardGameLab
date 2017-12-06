@@ -16,4 +16,8 @@ public class Card {
     public ValueType getValue() {
         return this.value;
     }
+
+    public int getRealValue() {
+        return this.value.getValue();
+    }
 }
