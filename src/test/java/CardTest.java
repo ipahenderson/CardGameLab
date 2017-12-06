@@ -18,8 +18,14 @@ public class CardTest {
 
 
     @Test
-    public void canGetSuit{
+    public void canGetSuit(){
         assertEquals(SuitType.HEARTS, card1.SuitType());
+    }
+
+
+    @Test
+    public void canGetValue(){
+        assertEquals(ValueType.TWO, card2.getValue());
     }
 
 
